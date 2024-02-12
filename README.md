@@ -1,6 +1,6 @@
 # Node.js Chat Application
 
-This is a basic Node.js chat application with Express and Socket.io.
+This is a basic Node.js chat application with [Express](https://expressjs.com/) and [Socket.io](https://socket.io/).
 
 ## How to run locally
 1) Open your terminal and run `run npm run start`
