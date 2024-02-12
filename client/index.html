@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat app</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BTC_Logo.svg/2000px-BTC_Logo.svg.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <div class="logo">
+          <span class="btc-logo">
+            <i class="fab fa-bitcoin"></i>
+          </span>
+          <h3>Satoshi chat</h3>
+        </div>
+        <p id="your-name">Your name</p>
+      </div>
+      <div class="chat-section">
+        <div class="main-wrapper">
+          <div class="chat-content">
+            <div class="message">
+              <!-- <div class="message-row other-message">
+                Here is friend message
+              </div>
+              <div class="message-row your-message">
+                Here is your message
+              </div> -->
+            </div>
+          </div>
+          <form class="msg-text">
+            <input
+              type="text"
+              name="msg"
+              id="msg"
+              placeholder="Type Message Here ..."
+              autocomplete="off"
+            />
+            <button id="btn-send">
+              <i class="fas fa-paper-plane"> Send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
